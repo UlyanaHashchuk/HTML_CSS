@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 30px 50px;
+    padding: 0;
+    text-align: center;
+}
+                            /* ROTATION */
+ .rotate {
+    font-size: 90px;
+    background: -webkit-linear-gradient(violet, #2dfccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+    transition: transform 1s; 
+}
+
+.rotate:hover {
+    transform: rotate(180deg);
+    
+    animation-name: invisible;
+    animation-duration: 1s;
+}
+
+@keyframes invisible {
+  from {opacity: 100%;}
+  to {opacity: 0;}
+}
+
+                          /* ZOOMING OUT */
+.zoom {
+    font-size: 90px;
+    color: deeppink;
+    margin: 90px 0;
+    
+    transition: transform 1s; 
+}
+
+.zoom:hover {
+    transform: scale(0, 0);
+}
+
+                          /* SWINGING */
+.swing {
+    font-size: 90px;
+    color: #42f590;
+}
+
+.swing:hover {
+    animation-name: swinging;
+    animation-duration: 1s;
+}
+
+@keyframes swinging {
+    0%   {transform: rotate(0deg);}
+    20%  {transform: rotate(15deg);}
+    40%  {transform: rotate(-15deg);}
+    60%  {transform: rotate(5deg);}
+    80%  {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+
+
+
